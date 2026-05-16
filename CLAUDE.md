@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# First Read — project notes
+# First Read: project notes
 
 Single page web portal for AI-assisted commercial contract triage. Built as a
 job application submission for the PortSwigger AI Pioneer role. The product
@@ -12,7 +12,7 @@ name is **First Read**.
 - Tailwind v4
 - Anthropic SDK (`@anthropic-ai/sdk`)
 - Zod for response validation
-- No PDF parsing library — Claude reads the PDF natively as a base64 document
+- No PDF parsing library. Claude reads the PDF natively as a base64 document
   block
 
 ## Key conventions

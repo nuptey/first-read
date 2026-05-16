@@ -6,12 +6,12 @@ by accident.
 
 Suggested coverage:
 
-- `nda-standard.pdf` — matches the playbook cleanly. Expected triage:
+- `nda-standard.pdf`: matches the playbook cleanly. Expected triage:
   `auto_approve`.
-- `nda-minor.pdf` — small deviations, all covered by the playbook. Expected
+- `nda-minor.pdf`: small deviations, all covered by the playbook. Expected
   triage: `light_touch`.
-- `nda-material.pdf` — material deviations or out-of-scope content. Expected
+- `nda-material.pdf`: material deviations or out-of-scope content. Expected
   triage: `full_review`.
-- `order-form.pdf` — a short order form with mixed positions.
+- `order-form.pdf`: a short order form with mixed positions.
 
 The portal accepts a single PDF at a time, up to 10 MB and 50 pages.

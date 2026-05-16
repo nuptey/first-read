@@ -43,7 +43,30 @@ body {
 }
 
 @media print {
+  :root {
+    --background: #ffffff;
+    --card: #ffffff;
+    --border: #cccccc;
+  }
   body {
     background: #ffffff;
+    color: #000000;
+  }
+  header,
+  footer,
+  button {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  [data-triage],
+  [data-severity],
+  article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  a[href]::after {
+    content: "";
   }
 }
