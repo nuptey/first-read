@@ -1,7 +1,15 @@
-import type { Assessment } from "@/lib/schema";
+import type { Assessment, Triage } from "@/lib/schema";
 import { TriageBadge } from "./TriageBadge";
 import { SummaryCard } from "./SummaryCard";
 import { FlagCard } from "./FlagCard";
+
+const EMPTY_SUBTITLE: Record<Triage, string> = {
+  auto_approve:
+    "The contract matches the playbook positions without deviation.",
+  light_touch: "No clause-level flags were raised.",
+  full_review:
+    "No clause-level flags were raised. See the assessment note above for the basis of this verdict.",
+};
 
 export function ReportView({
   assessment,
@@ -39,7 +47,7 @@ export function ReportView({
             No flagged clauses.
           </p>
           <p className="mt-1 text-sm text-muted">
-            The contract matches the playbook positions without deviation.
+            {EMPTY_SUBTITLE[assessment.triage]}
           </p>
         </div>
       )}
