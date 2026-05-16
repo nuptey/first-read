@@ -16,6 +16,13 @@ export async function proxy(req: NextRequest) {
     return NextResponse.next();
   }
 
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.json(
+      { error: "Authentication required." },
+      { status: 401 },
+    );
+  }
+
   const url = req.nextUrl.clone();
   url.pathname = "/login";
   url.search = "";
