@@ -4,20 +4,20 @@ const SEVERITY_TONE: Record<
   Severity,
   { label: string; chipBg: string; chipText: string; border: string }
 > = {
-  standard: {
-    label: "Standard",
+  acceptable: {
+    label: "Acceptable",
     chipBg: "bg-triage-approve-soft",
     chipText: "text-triage-approve",
     border: "border-border",
   },
-  minor: {
-    label: "Minor deviation",
+  fallback: {
+    label: "Fallback",
     chipBg: "bg-triage-light-soft",
     chipText: "text-triage-light",
     border: "border-triage-light/30",
   },
-  material: {
-    label: "Material deviation",
+  red_line: {
+    label: "Red line",
     chipBg: "bg-triage-full-soft",
     chipText: "text-triage-full",
     border: "border-triage-full/30",

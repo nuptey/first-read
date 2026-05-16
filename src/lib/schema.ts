@@ -7,7 +7,7 @@ export const TriageSchema = z.enum([
 ]);
 export type Triage = z.infer<typeof TriageSchema>;
 
-export const SeveritySchema = z.enum(["standard", "minor", "material"]);
+export const SeveritySchema = z.enum(["acceptable", "fallback", "red_line"]);
 export type Severity = z.infer<typeof SeveritySchema>;
 
 export const ConfidenceSchema = z.enum(["low", "medium", "high"]);
