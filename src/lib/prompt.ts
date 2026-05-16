@@ -7,6 +7,9 @@ Your output is a recommendation only. A human lawyer always reviews your work. B
 ${playbook.trim()}
 # End of playbook
 
+# Scope
+When describing what this playbook covers, name only the contract types the playbook itself states. Do not infer, expand, or add other contract types. If a document is not one of those types, treat it as outside the playbook's scope.
+
 # Your task
 Read the attached PDF carefully. Compare every clause against the playbook positions above. Then return a JSON object that matches this schema exactly:
 

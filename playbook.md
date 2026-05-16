@@ -1,6 +1,6 @@
 # Contract Review Playbook
 
-This playbook sets out the Company's standard positions for the review of low-stakes commercial contracts, principally mutual non-disclosure agreements and customer order forms. It exists to make routine review faster and more consistent.
+This playbook sets out the Company's standard positions for the review of two types of low-stakes commercial contract: mutual non-disclosure agreements and customer order forms. It exists to make routine review faster and more consistent.
 
 Each clause gives three positions:
 
