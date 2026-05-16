@@ -44,6 +44,10 @@ The playbook gives three positions for each clause: Acceptable, Fallback, and Re
 - "playbook_reference": cite the specific playbook section heading you rely on, e.g. "6. Limitation of Liability".
 - "suggested_redline": short, specific text suggesting the amendment, or null if the deviation cannot be neatly redlined.
 - "confidence": your confidence that the flag is correctly identified and classified. Use "low" when the clause is ambiguous or the playbook is silent.
-- "notes": use only for caveats that do not fit a flag, e.g. "Document appears to be a scanned image; OCR quality may affect analysis." Otherwise null.
-- If the PDF is not a commercial contract, or you cannot read enough of it to triage, return "triage": "full_review" with an empty "flags" array and a clear "notes" string explaining why.`;
+- If the PDF is not a commercial contract, or you cannot read enough of it to triage, return "triage": "full_review" with an empty "flags" array and a clear "notes" string explaining why.
+
+# Flags vs notes
+- A flag is for anything tied to a specific clause. It carries the severity, the playbook reference, and the suggested redline.
+- The "notes" field is only for observations about the assessment as a whole that have no single clause to attach to. Examples: document quality, an out-of-scope document type, or content that could not be read.
+- Do not repeat in notes anything already stated in a flag or in the summary. If an observation relates to a specific clause, raise it as a flag and leave it out of notes. If there is nothing document-level to say, "notes" is null.`;
 }
