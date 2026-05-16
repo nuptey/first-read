@@ -10,6 +10,14 @@ Each clause gives three positions:
 
 Triage follows from the flags. A contract whose terms all match the Acceptable position can be auto-approved, subject to human sign-off. A contract with only minor deviations needs a light touch check. A contract with any material deviation, or anything outside this playbook, needs full review.
 
+## Clauses Not Present in a Contract
+
+A contract will not always contain every clause this playbook covers. Treat an absent clause as follows.
+
+- If the clause is not relevant to the type of contract being reviewed, for example payment terms in a non-disclosure agreement, its absence is unremarkable. Do not flag it and do not let it affect the triage outcome.
+- If the clause would normally be expected for the type of contract being reviewed but is absent, note its absence for the reviewer. The absence is not by itself a material deviation and does not on its own rule out an auto-approve recommendation.
+- A clause that is present but departs from the Acceptable position is handled in the normal way, as a flag with the appropriate severity.
+
 ---
 
 ## 1. Definition of Confidential Information
