@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1a1a1a;
+  --muted: #6b6b6b;
+  --card: #ffffff;
+  --border: #ece9e3;
+  --accent: #3f5374;
+  --accent-soft: #e7ecf3;
+  --triage-approve: #5f8a6a;
+  --triage-approve-soft: #e9f1ea;
+  --triage-light: #b8893b;
+  --triage-light-soft: #f6ecd9;
+  --triage-full: #a85240;
+  --triage-full-soft: #f4e2dd;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-triage-approve: var(--triage-approve);
+  --color-triage-approve-soft: var(--triage-approve-soft);
+  --color-triage-light: var(--triage-light);
+  --color-triage-light-soft: var(--triage-light-soft);
+  --color-triage-full: var(--triage-full);
+  --color-triage-full-soft: var(--triage-full-soft);
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+}
